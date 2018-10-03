@@ -1,170 +1,212 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-    <title>data.world and KNOTS</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-  </head>
-  <body style="color:#333D49;">
-<!--jumbotron header-->
-    <div class="header" style="background:#333D49; max-height:150px;">
-      
-      <div class="container p-responsive py-6 py-lg-10 text-center" style="color:#fff;">
-        <img src="dw+knots_light.png" class="mb-3 mb-sm-5 col-6 col-sm-12" style="max-width:550px;">
-      </div>
+  <title>data.world and KNOTS</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
+</head>
+<body style="color:#333D49;">
+  <!--jumbotron header-->
+  <div class="header" style="background:#333D49; max-height:150px;">
 
+    <div class="container p-responsive py-6 py-lg-10 text-center" style="color:#fff;">
+      <img src="/Users/sarakbarr/Dropbox/Personal/data.world/Super-Connectors + Pseudo Integrations/KNOTS/dw+knots_light.png" class="mb-3 mb-sm-5 col-6 col-sm-12" style="max-width:550px;">
     </div>
-<!--first intro-->
-  <div class="container align-items-center text-center form-group align-items-center" style="padding-bottom:1em;padding-top:1em;">
-    <h2 class="display-4"> Start Using KNOTS</h2>
-            <p class="lead"> With KNOTS, you can quickly and easily leverage ETL without complex manual configurations.
-            </p>
-            <p class="font-weight-light"> <i><b>NOTE: </b>KNOTS is currently only available on MacOS</i>
-            </p>
+
   </div>
-<!--first section-->
-  <div class="container text-center form-group" style="padding-bottom:1em;padding-top:1em;">
-    <h2 class="font-weight-light"> Download KNOTS & Docker</h2>
-            <p class="font-weight-light"> Before you can start replicating your data, you'll need to download and install KNOTS and Docker:</p>
-            <ol style="list-style-position: inside; padding-top:1em;" class="col-sm-6 offset-sm-3">
-              <li class="font-weight-light text-center" style="padding-bottom:1em;"><a href="https://github.com/singer-io/knots/releases" target="_blank">Download the .dmg</a> from the KNOTS repository on GitHub (KNOTS is built on top on Singer.io taps & targets)
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;"><a href="https://store.docker.com/editions/community/docker-ce-desktop-mac" target="_blank">Download Docker</a> <i> <b>NOTE: </b>You'll need to create a free Docker account before downloading</i>
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Install KNOTS and Docker on your computer
-              </li>
-            </ol>
-  <div class="row text-center form-group" style="padding-bottom:1em;">
-      <div class="form-group p-3 col-sm-4 offset-sm-2" style="padding-bottom:2em;">
-        <img src="knots_installknots.png" class="shadow img-fluid" style="max-height:10em;">
+  <!--first intro-->
+  <div class="container align-items-center text-center form-group align-items-center" style="padding-bottom:1em;padding-top:4em;">
+    <h1 style="font-weight:400"> You've enabled KNOTS, now what?</h1>
+    <p class="h5" style="font-weight:300"> With KNOTS, you can quickly and easily leverage ETL without complex manual configurations.
+    </p>
+
+  </div>
+  <!--first section-->
+  <div class="container" style="padding-bottom:1em;padding-top:2em;">
+    <div class="row">
+      <div class="col">
+        <h2 style="font-weight:400" id="download-knots-docker"> Download KNOTS & Docker.</h2>
+        <p class="h5" style="font-weight:300">Before you can start replicating your data, you'll need to download and install KNOTS and Docker:</p> 
+        <ol style="list-style-position: inside;">
+          <li style="padding-bottom:1em; font-weight:300; padding-top:2em;">Download the correct package from the <a href="https://github.com/singer-io/knots/releases/latest" target="_blank">newest releases</a> in  the KNOTS repository on GitHub <i>(KNOTS is built on top on Singer.io taps & targets)</i>.
+          </li>
+          <div class="alert alert-warning">
+          On the releases page, scroll down to the <span class="h5">  Download KNOTS  </span> portion of the page, where you can quickly download the correct package for your system (.dmg for Mac, .exe for Windows).
+          </div>
+          <li style="font-weight:300; padding-bottom:1em;">Download the correct Docker package for your system <i style="font-size:85%">(you will need to create a free Docker account if you don't already have one).</i>
+          </li>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                 <button type="button" class="btn btn-primary ml-lg-3" style="margin-bottom:1em;"><a href="https://store.docker.com/editions/community/docker-ce-desktop-mac" style="color:#fff; text-decoration:none;">Download for Mac </a></button>
+                 <button type="button" class="btn btn-primary ml-lg-4" style=" margin-bottom:1em;"><a href="https://store.docker.com/editions/community/docker-ce-desktop-windows" style="color:#fff; text-decoration:none;">Download for Windows</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col ml-lg-3">
+                 <p style="font-size:80%">
+                 <a href="https://docs.docker.com/docker-for-mac/install/#install-and-run-docker-for-mac" target="_blank">Installation instructions for Mac</a>
+                 </p>
+              </div>
+              </div>
+            <div class="row">
+              <div class="col ml-lg-3">
+                 <p style="font-size:80%">
+                 <a href="https://docs.docker.com/docker-for-windows/install/" target="_blank">Installation instructions for Windows</a>
+                 </p>
+              </div>
+            </div>
+          </div>
+          <li style="font-weight:300;">Install KNOTS and Docker on your computer.
+          </li>
+        </ol>
       </div>
-      <div class="form-group p-3 col-sm-4" style="padding-bottom:2em;">
-        <img src="knots_installdocker.png" class="shadow img-fluid" style="max-height:10em;">
-      </div>
+    </div>
   </div>
   <!--second section-->
-  <div class="container text-center form-group" style="padding-bottom:1em; padding-top:2em;">
-    <h2 class="font-weight-light"> Start Your KNOT</h2>
-            <p class="font-weight-light"> Now that KNOTS & Docker are installed, you can begin creating your first KNOT:</p>
-            <ol style="list-style-position: inside; padding-top:1em; display:inline;" class="col-sm-6 offset-sm-3 text-center align-items-center">
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Open KNOTS & Docker (make sure Docker is running by checking the application in the top bar of your computer)
-              </li>
-              <div class="row text-center form-group" style="padding-bottom:1em;">
-                <div class="form-group p-3 col-sm-6 offset-sm-3" style="padding-bottom:2em;">
-                  <img src="knots_docker_running.png" class="shadow img-fluid" style="max-height:15em;">
-                </div>
-              </div>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Select your tap (the source you want to use to replicate data). <i><b>NOTE: </b>Some taps may require additional accounts or installed apps.</i>
-              </li>
-              <div class="row text-center form-group" style="padding-bottom:1em;">
-                <div class="form-group p-3 col" style="padding-bottom:2em;">
-                  <img src="knots_choosetap.png" class="shadow img-fluid" style="max-height:25em;">
-                </div>
-              </div>
-              <div class="row text-center form-group" style="padding-bottom:1em; display:inline">
-              <li class="font-weight-light align-items-center" style="padding-bottom:1em;">Configure your tap. You'll need to enter the following information. <i><b>NOTE: </b>Some taps may require additional information</i>
-              </li>
-                <ul class="text-center font-weight-light align-items-center" style="display:inline;">
-                  <li class="font-weight-light text-center" style="padding-bottom:1em;">Hostname <br><i><b>NOTE: </b>If you are running your database locally, enter <code>host.docker.internal</code> instead of <code>localhost</code></i>
-                  </li>
-                  <li class="font-weight-light text-center" style="padding-bottom:1em;">Port <br><i><b>NOTE: </b>Most apps have a default port (5432 for PostgreSQL, 3306 for MySQL).</i>
-                  </li>
-                  <li class="font-weight-light text-center" style="padding-bottom:1em;">Database name
-                  </li>
-                  <li class="font-weight-light text-center" style="padding-bottom:1em;">Username & Password for your database
-                  </li>
-                </ul>
-            </ol>
-            </div>
-            <div class="row text-center form-group">
-                <div class="form-group p-3 col-sm-6 offset-sm-3">
-                  <img src="knots_configuretap.png" class="shadow img-fluid" style="max-height:25em;">
-                </div>
-              </div>
-  </div>
+  <div class="container" style="padding-bottom:1em;padding-top:2em;">
+    <div class="row">
+      <div class="col">
+        <h2 style="font-weight:400"> Create your knot.</h2>
+        <p class="h5" style="font-weight:300"> Now that KNOTS & Docker are installed, you can begin creating your first knot: 
+        </div>
+      </div>
+    </div>
 
- <!--third section-->
- <div class="container text-center form-group" style="padding-bottom:1em;">
-    <h2 class="font-weight-light"> Choose Replication Options</h2>
-            <p class="font-weight-light"> Choose the data you'd like to replicate by checking boxes in the list of available data.</p>
-            <div class="row text-center form-group">
-                <div class="form-group p-3 col-sm-6 offset-sm-3">
-                  <img src="knots_choosedata.png" class="shadow img-fluid" style="max-height:25em;">
-                </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ol style="list-style-position: inside;">
+            <li style="padding-bottom:1em; font-weight:300; padding-top:1em;">Open KNOTS & Docker (make sure Docker is open & running before starting your first knot.)
+            </li>
+            <div class="alert alert-primary" style="font-size:90%">
+          When opening KNOTS in Windows, you may receive a popup that states "Windows protected your PC". Click on More info, followed by Run anyway.
             </div>
-</div>
-  <!--fourth section-->
-  <div class="container text-center form-group" style="padding-bottom:1em;">
-    <h2 class="font-weight-light"> Choose Your Target</h2>
-            <p class="font-weight-light"> Choose data.world from the list of targets to replicate your data on data.world</p>
-           <div class="row text-center form-group">
-                <div class="form-group p-3 col-sm-6 offset-sm-3">
-                  <img src="knots_target.png" class="shadow img-fluid" style="max-height:25em;">
-                </div>
-           </div>
- </div>
-<!--fifth section-->
-  <div class="container text-center form-group" style="padding-bottom:1em;">
-    <h2 class="font-weight-light"> Configure Your Target</h2>
-            <p class="font-weight-light"> Configure your target. You'll need to enter the following information:</p>
-            <ol style="list-style-position: inside; padding-top:1em; display:inline;" class="col-sm-6 offset-sm-3 text-center align-items-center">
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Dataset URL <br><i>Enter the URL for the dataset you'd like replicate to, or use the <b>Browse</b> button and sign into data.world to browse through a list of options.</i>
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">API Key <br>You can find your API Key in your data.world advanced settings <a href="https://data.world/settings/advanced" target="_blank">here.</a> 
-              </li>
-              </ol>
-              <div class="row text-center form-group">
-                <div class="form-group p-3 col-sm-6 offset-sm-3">
-                  <img src="knots_configuretarget.png" class="shadow img-fluid" style="max-height:25em;">
+            <div class="alert alert-secondary" style="font-size:90%">
+            <b>
+              Docker Tips:
+            </b>
+          <ul style="list-style-position:inside;">
+              <li style="padding-bottom:1em; font-weight:300; padding-top:1em;"><b>On Mac:</b> Check the Docker <i>file sharing preferences</i> to make sure <code>Users</code> is a shared directory.
+            </li>
+            <li style="font-weight:300; padding-bottom:1em;"><b>On Windows:</b> The first time you set up a tap, Docker will ask to share the C drive. Accept, and enter your password if prompted.
+            </li>
+          </ul>
+            </div>
+            <li style="padding-bottom:1em; padding-top:1em; font-weight:300;">
+              Select your tap (the source you want to use to replicate data). 
+            </li >
+            <div class="container" style="padding-bottom:1em;padding-top:1em;">
+              <div class="row">
+                <div class="col-sm-8 ml-lg-4" >
+                  <img src="/Users/sarakbarr/Dropbox/Personal/data.world/Super-Connectors + Pseudo Integrations/KNOTS/knots_choose-tap.png" class="img-fluid rounded" style="box-shadow: 3px 3px 45px grey;">
                 </div>
               </div>
- </div>
-<!--sixth section-->
-  <div class="container text-center form-group" style="padding-bottom:1em;">
-    <h2 class="font-weight-light"> Save & Run</h2>
-            <p class="font-weight-light"> Once you configure your target, you can save & run your KNOT. <i><b>NOTE: </b>Some replication may take a while if the datasets are large, but don't worry! You can pause and restart your KNOT at any time without any data loss.</i></p>
-           <div class="row text-center form-group">
-                <div class="form-group p-3 col-sm-6 offset-sm-3">
-                  <img src="knots_saveandrun.png" class="shadow img-fluid" style="max-height:25em;">
+            </div>
+
+            <li style="font-weight:300; padding-bottom:2em; padding-top:2em;">Configure your tap. You'll need to enter the following information:
+                <ul style="list-style-position: inside;">
+                    <li style="padding-bottom:1em; padding-top:2em; font-weight:300;">
+                    Hostname.
+                    </li>
+                    <div class="alert alert-secondary col-sm-9" style="font-weight:300; font-size:1em;">
+                        <i>If you are running your database locally, enter <code>host.docker.internal</code> instead of <code>localhost</code></i>
+                    </div>
+                    <li style="font-weight:300; padding-bottom:1em;">
+                    Port.
+                    </li>
+                    <div class="alert alert-secondary col-sm-9" style="font-weight:300;">
+                        <i>Most apps have a default port (<b>5432</b> for PostgreSQL, <b>3306</b> for MySQL).</i>
+                    </div>
+                    <li style="padding-bottom:1em; font-weight:300;">
+                    Your database name.
+                    </li>
+                    <li style="padding-bottom:1em; font-weight:300;">
+                    Username & password for your database.
+                    </li>
+                </ul>
+            </li>
+                <div class="col-sm-8 ml-lg-4" >
+                  <img src="/Users/sarakbarr/Dropbox/Personal/data.world/Super-Connectors + Pseudo Integrations/KNOTS/knots_config-tap.png" class="img-fluid rounded" style="box-shadow: 3px 3px 45px grey;">
                 </div>
-           </div>
- </div>
-<!--seventh section-->
-  <div class="container text-center form-group" style="">
-    <h2 class="font-weight-light"> What Else Can I Do?</h2>
-            <p class="font-weight-light"> Once you've completed a KNOT, you can always take actions on your completed KNOTS, like:</p>
-            <ul style="list-style-position: inside; padding-top:1em;" class="col-sm-6 offset-sm-3">
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Sync new data
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Sync all data
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Edit your KNOT
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Export your KNOT <br><i><b>NOTE: </b> Exporting KNOTS will allow you to use the job scheduler of your choice to make sure your data is always up to date.</i>
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Delete your KNOT
-              </li>
-              <li class="font-weight-light text-center" style="padding-bottom:1em;">Create a new KNOT
-              </li>
-              </ul>
-              <div class="row text-center form-group">
-                <div class="form-group p-3 col-sm-6 offset-sm-3">
-                  <img src="knots_finishedknot.gif" class="shadow img-fluid" style="max-height:25em;">
+            <li style="font-weight:300; padding-bottom:3em; padding-top:3em;">Select data.world as your target.
+            </li>
+            <div class="col-sm-8 ml-lg-4" >
+                <img src="/Users/sarakbarr/Dropbox/Personal/data.world/Super-Connectors + Pseudo Integrations/KNOTS/knots_choose-target.png" class="img-fluid rounded" style="box-shadow: 3px 3px 45px grey;">
+            </div>
+            <li style="font-weight:300; padding-bottom:2em; padding-top:2em;">Configure the data.world target. You'll need to enter the following information:
+                <ul style="list-style-position: inside;">
+                    <li style="padding-bottom:1em; padding-top:2em; font-weight:300;">
+                    Dataset URL.
+                    </li>
+                    <div class="alert alert-secondary col-sm-9" style="font-weight:300; font-size:1em;">
+                        <i>Choose <b>Browse</b> to choose from a list of available datasets.</i>
+                    </div>
+                    <li style="padding-bottom:1em; font-weight:300;">
+                    Your API token (from your data.world <a href="https://data.world/settings/advanced" target="_blank">Advanced Settings</a>).
+                    </li>
+                    <li style="padding-bottom:2em; font-weight:300;">
+                    Username & password for your database.
+                    </li>
+                </ul>
+                <div class="col-sm-8 ml-lg-4" >
+                  <img src="/Users/sarakbarr/Dropbox/Personal/data.world/Super-Connectors + Pseudo Integrations/KNOTS/knots_config-target.png" class="img-fluid rounded" style="box-shadow: 3px 3px 45px grey;">
                 </div>
-              </div>
-</div>
-</div>
-<!--footer-->
-<div class="footer text-center align-items-center" style="padding-top:3em; padding-bottom: 3em; background-color:#333D49; color:#fff">
-    <h4 class="font-weight-light"> Want to see more information on the data.world + KNOTS Integration? <u><a href="https://github.com/singer-io/knots#knots" style="color:#fff; font-weight:600;" target="_blank">check it out here</a></u>.
-    </h4>
-</div>
+            </li>
+            <li style="font-weight:300; padding-bottom:1em; padding-top:2em;">Choose a name for your knot, then choose <b>Save & Run. </b>
+            </li>
+            <div class="alert alert-warning col-sm-9" style="font-weight:300; font-size:1em;">
+                While your knot is running, you can cancel and and resume at any time without any loss of progress.
+            </div>
+          </ol>
+        </div>  
+      </div> 
+    </div> 
+    <!--what's next-->
+    <hr style="margin-top:1em;">
+    <div class="container" style="padding-bottom:1em; padding-top:1em;">
+      <div class="row">
+        <div class="col-sm-8">
+
+          <h2 style="font-weight:400; padding-top:1em;"> What next?</h2>
+          <p class="h5" style="font-weight:300"> Here are a few things you can do with KNOTS and data.world:</p>
+          <ul style="list-style-position: inside; padding-top:2em;">
+            <li style="padding-bottom:1em; font-weight:300;">With any saved knot, you can sync new data, sync all data, and edit, export, or delete your knot.
+            </li>
+            <li style="padding-bottom:1em; font-weight:300;">Using the <b>Export</b> function, you can set up a job that will update your data automatically on a schedule. <a href="https://github.com/singer-io/knots/blob/master/README.md#run-with-a-scheduler" target="_blank" >Learn more about using a job scheduler here</a>
+            </li>
+          </ul>
+        </div> 
+      </div>
+    </div>   
+<!--video-->
+    <hr style="margin-top:1em;">
+    <div class="container" style="padding-bottom:1em; padding-top:1em;">
+      <div class="row">
+        <div class="col-sm-9">
+
+          <h2 style="font-weight:400; padding-top:1em;"> Knots walkthrough video</h2>
+          <p class="h5" style="font-weight:300"> Watch a short video that will walk you through the process of installing and using KNOTS. <br><span style="font-size:85%; color:grey;"><i>Please note, this walkthrough is shown on MacOS.</i></span></p>
+          <div class="embed-responsive embed-responsive-16by9" style="margin-top:2em;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Rd-a2Pwn_LE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div> 
+      </div>
+    </div> 
+    <!--footer-->
+    <div class="jumbotron-fluid text-center align-items-center border-top" style="margin-top:1em; padding-top:3em; padding-bottom: 3em; background-color:#F2F2F2; color:#36454f">
+      <h4 style="font-weight:300"> Want to see more information on the data.world + KNOTS Integration? <u><a href="https://help.data.world/hc/en-us/articles/360008272614-KNOTS" style="color:#36454f; font-weight:600;" target="_blank">check it out here</a></u>.
+      </h4>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -172,4 +214,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
-</html>
+  </html>
